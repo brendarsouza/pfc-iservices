@@ -1,0 +1,94 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14/10/2017, 09:31:12
+    Author     : brenda
+*/
+
+body {
+
+    line-height: 1.8;
+    color: #1abc9c;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+}
+
+p {font-size: 14px;}
+.margin {margin-bottom: 45px;}
+
+.bg-1 {
+    background-image: url("imagens/fundo_4.jpg");/* */
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: 100%;
+    text-align: center;
+}
+.bg-2 {
+    background-image: url("imagens/app1.jpg");/* */
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: 100%;
+    align-items: center;
+}
+h3{
+    text-shadow: 0.1em 0.1em 0.85em #000;
+    font-size: 35px;
+    align-self: center;
+    align-items: center;
+    color: #fff;
+}
+h4{
+    text-shadow: 0.2em 0.2em 0.85em #fff;
+    font-size: 25px;
+    align-self: center;
+    align-items: center;
+    color: #ref;
+}
+
+.container-fluid {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+    color: #000;
+    background-color: #fff;
+}
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+
+    font-size: 16px;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+* {
+    box-sizing: border-box;
+}
+/* Style the "Add" button */
+.addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 11px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.addBtn:hover {
+    background-color: #bbb;
+}input {
+    border: none;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    color: black;
+}

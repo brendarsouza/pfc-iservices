@@ -1,0 +1,38 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0">
+
+	<persistence-unit name="ISERVICES">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		
+                
+                <class>Model.Administrador</class>
+                <class>Model.AgendaDeServico</class>
+                <class>Model.Status_Orcamento</class>
+                <class>Model.Avaliacao</class>
+                <class>Model.CategoriaProfissao</class>
+                <class>Model.Cliente</class>
+                <class>Model.Endereco</class>
+                <class>Model.Orcamento</class>
+                <class>Model.Pedido</class>
+                <class>Model.Pessoa</class>
+                <class>Model.Profissao</class>
+                <class>Model.Profissional</class>
+                <class>Model.Sexo</class>
+                <class>Model.Usuario</class>
+                
+		<properties>
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/ISERVICES" />
+			<property name="javax.persistence.jdbc.user" value="postgres" />
+			<property name="javax.persistence.jdbc.password" value="postgres" />
+
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.format_sql" value="true" />
+		</properties>
+	</persistence-unit>
+
+</persistence>

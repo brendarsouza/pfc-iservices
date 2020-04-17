@@ -1,0 +1,44 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27/09/2017, 16:33:18
+    Author     : brenda
+*/
+.estrelas input[type=radio] {
+    display: none;
+}
+.estrelas label i.fa:before {
+    content:'\f005';
+    color: #FC0;
+}
+.estrelas input[type=radio]:checked ~ label i.fa:before {
+    color: #CCC;
+}
+
+.relogio input[type=radio] {
+    display: none;
+}
+.relogio label i.fa:before {
+    content:'\f017';
+    color: #00ccff;
+}
+.relogio input[type=radio]:checked ~ label i.fa:before {
+    color: #CCC;
+}
+
+.dinheiro input[type=radio] {
+    display: none;
+}
+.dinheiro label i.fa:before {
+    content:'\f155';
+    color: #00e600;
+    font-size: 15px;
+    text-align: center;
+    font-size: medium;
+}
+.dinheiro input[type=radio]:checked ~ label i.fa:before {
+    color: #CCC;
+}

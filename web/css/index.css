@@ -1,0 +1,103 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20/05/2017, 11:27:41
+    Author     : brenda
+*/
+
+body {
+    line-height: 1.8;
+    background-color: white;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+}
+
+p {font-size: 14px;}
+.margin {margin-bottom: 45px;}
+
+
+.bg-1{
+    background-image: url("../imagens/fundo_11.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: 100%;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 90px;
+}
+.bg-2 {
+    background-image: url("imagens/app1.jpg");/* */
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: 100%;
+    align-items: center;
+}
+.bg-3 {
+    background-image: url("imagens/fundo_11.jpg");/* */
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: 100%;
+    align-items: center;
+}
+.bg-5 {
+    background-image: url("../imagens/imagem(11).jpg");/* */
+    color: #000;
+}
+a{
+    color: white;
+}
+h3{
+    text-shadow: 0.1em 0.1em 0.45em #333;
+    font-size: 35px;
+    align-self: center;
+    align-items: center;
+    color: #000066;
+}
+
+.container-fluid {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+
+    background-color: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+/* Style the "Add" button */
+.addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 11px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.addBtn:hover {
+    background-color: #bbb;
+}input {
+
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    color: black;
+}
+td{
+    text-align: center ;
+}
+th{
+    text-align: center; 
+    font-weight: bold;
+}
+thead{
+    font-weight: bold;
+}

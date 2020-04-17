@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <session-config>
+        <session-timeout>
+            3000
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>./index.jsp</welcome-file>
+    </welcome-file-list>
+    <filter>
+        <filter-name>AcessoCliente</filter-name>
+        <filter-class>AutorizacaoDeAcesso.AcessoCliente</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AcessoCliente</filter-name>
+        <url-pattern>/Cliente/*</url-pattern>
+        <url-pattern>/Agenda/CancelamentoConfirmadoCliente.jsp</url-pattern>
+        <url-pattern>/Agenda/ConfirmarAceiteAgendaCliente.jsp</url-pattern>
+        <url-pattern>/Agenda/ConfirmarCancelamentoAgendaCliente.jsp</url-pattern>
+        <url-pattern>/Agenda/ConfirmarRecusaAgendaCliente.jsp</url-pattern>
+        <url-pattern>/Agenda/NovoAgendamentoAceitoCliente.jsp</url-pattern>
+        <url-pattern>/Agenda/NovoAgendamentoRecusadoCliente.jsp</url-pattern>
+        <url-pattern>/Avaliacao/AvaliarServicoCliente.jsp</url-pattern>
+        <url-pattern>/Consultas/ListaProfissionaisFiltrados.jsp</url-pattern>
+        <url-pattern>/Consultas/ListarProfissional.jsp</url-pattern>
+        <url-pattern>/Erro/ErroDataPedido.jsp</url-pattern>
+        <url-pattern>/Erro/ErroHoraInicialPedidoPosteriorHoraFinal.jsp</url-pattern>
+        <url-pattern>/Erro/ErroHoraPedidoPosteriorHoraAtendimento.jsp</url-pattern>
+        <url-pattern>/Erro/ErroHoraPedidoPosteriorHorarioOuHoraAtendimentoProfissional.jsp</url-pattern>
+        <url-pattern>/Erro/ErroHorarioInicioIgualOuPosteriorHorarioFim.jsp</url-pattern>
+        <url-pattern>/Erro/ErroHorarioPedido.jsp</url-pattern>
+        <url-pattern>/Pedido/ConfirmacaoOrcamentoCliente.jsp</url-pattern>
+        <url-pattern>/Pedido/ConfirmarOrcamentoCliente.jsp</url-pattern>
+        <url-pattern>/Pedido/ConfirmarRecusaOrcamentoCliente.jsp</url-pattern>
+        <url-pattern>/Pedido/FormularioPedidoCliente.jsp</url-pattern>
+        <url-pattern>/Pedido/OrcamentoRecusadoCliente.jsp</url-pattern>
+        <url-pattern>/Visita/AceitacaoVisitaConfirmadaCliente.jsp</url-pattern>
+        <url-pattern>/Visita/CancelamentoConfirmadoCliente.jsp</url-pattern>
+        <url-pattern>/Visita/ConfirmarAceitacaoVisitaCliente.jsp</url-pattern>
+        <url-pattern>/Visita/ConfirmarCancelamentoVisitaCliente.jsp</url-pattern>
+        <url-pattern>/Visita/ListarVisitasCliente.jsp</url-pattern>
+        
+        <url-pattern>/consultarPedidosCliente</url-pattern>
+        <url-pattern>/consultarPedidosEmEsperaCliente</url-pattern>
+        <url-pattern>/consultarPedidosAprovadosCliente</url-pattern>
+        <url-pattern>/consultarPedidosReprovadosCliente</url-pattern>
+        <url-pattern>/consultarVisitasCliente</url-pattern>
+        <url-pattern>/consultarVisitasEmEsperaCliente</url-pattern>
+        <url-pattern>/consultarVisitasAprovadasCliente</url-pattern>
+        <url-pattern>/consultarVisitasReprovadasCliente</url-pattern>
+        <url-pattern>/consultarVisitasCanceladasCliente</url-pattern>
+        <url-pattern>/consultarVisitasRemarcadasCliente</url-pattern>
+        <url-pattern>/consultarOrcamentoCliente</url-pattern>
+        <url-pattern>/consultarOrcamentosEmEsperaCliente</url-pattern>
+        <url-pattern>/consultarOrcamentosAprovadosCliente</url-pattern>
+        <url-pattern>/consultarOrcamentosReprovadosCliente</url-pattern>
+        <url-pattern>/consultarAgendaCliente</url-pattern>
+        <url-pattern>/consultarAgendaEmEsperaCliente</url-pattern>
+        <url-pattern>/consultarAgendaConcluidaCliente</url-pattern>
+        <url-pattern>/consultarAgendaCanceladaCliente</url-pattern>
+        <url-pattern>/consultarReagendadosCliente</url-pattern>
+        <url-pattern>/buscarAvaliacoesCliente</url-pattern>
+        <url-pattern>/consultarNaoAvaliados</url-pattern>
+        <url-pattern>/buscarPedidosAvaliadosCliente</url-pattern>
+        <url-pattern>/buscarProfissionaisParaSolicitacao</url-pattern>
+        <url-pattern>/buscarProfissionaisParaSolicitacaoFiltro</url-pattern>
+        <url-pattern>/enviarSolicitacao</url-pattern>
+        <url-pattern>/cancelarVisita</url-pattern>
+        <url-pattern>/aceitarVisita</url-pattern>
+        <url-pattern>/recusarOrcamento</url-pattern>
+        <url-pattern>/aceitarOrcamento</url-pattern>
+        <url-pattern>/cancelarAgendamento</url-pattern>
+        <url-pattern>/areaCliente</url-pattern>
+        <url-pattern>/</url-pattern>
+        <url-pattern>/</url-pattern>
+        <url-pattern>/</url-pattern>
+        <url-pattern>/</url-pattern>
+        <url-pattern>/</url-pattern>
+
+        
+        
+        
+    </filter-mapping>
+    
+    <filter>
+        <filter-name>AcessoProfissional</filter-name>
+        <filter-class>AutorizacaoDeAcesso.AcessoProfissional</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AcessoProfissional</filter-name>
+        <url-pattern>/Profissional/*</url-pattern>
+        <url-pattern>/Agenda/CancelamentoConfirmadoProfissional.jsp</url-pattern>
+        <url-pattern>/Agenda/ConfirmarAceiteAgendaProfissional.jsp</url-pattern>
+        <url-pattern>/Agenda/ConfirmarCancelamentoAgendaProfissional.jsp</url-pattern>
+        <url-pattern>/Agenda/FinalizarPedidoProfissional.jsp</url-pattern>
+        <url-pattern>/Agenda/NovoAgendamentoAceitoProfissional.jsp</url-pattern>
+        <url-pattern>/Agenda/PedidoFinalizadoProfissional.jsp</url-pattern>
+        <url-pattern>/Pedido/ConfirmacaoEnvioOrcamentoProfissional.jsp</url-pattern>
+        <url-pattern>/Pedido/ConfirmarRecusaPedidoProfissional.jsp</url-pattern>
+        <url-pattern>/Pedido/FormularioOrcamentoProfissional.jsp</url-pattern>
+        <url-pattern>/Pedido/OrcamentoRecusadoProfissional.jsp</url-pattern>
+        <url-pattern>/Pedido/PedidoRecusadoProfissional.jsp</url-pattern>
+        <url-pattern>/Visita/AceitacaoVisitaConfirmadaProfissional.jsp</url-pattern>
+        <url-pattern>/Visita/AgendarVisitaProfissional.jsp</url-pattern>
+        <url-pattern>/Visita/CancelamentoConfirmadoProfissional.jsp</url-pattern>
+        <url-pattern>/Visita/ConfirmarAceitacaoVisitaProfissional.jsp</url-pattern>
+        <url-pattern>/Visita/ConfirmarCancelamentoVisitaProfissional.jsp</url-pattern>
+        <url-pattern>/Visita/VisitaAgendadaProfissional.jsp</url-pattern>
+        
+        <url-pattern>/consultarTodosPedidosProfissional</url-pattern>
+        <url-pattern>/consultarPedidosEmEsperaProfissional</url-pattern>
+        <url-pattern>/consultarPedidosAprovadosProfissional</url-pattern>
+        <url-pattern>/consultarPedidosReprovadosProfissional</url-pattern>
+        <url-pattern>/consultarVisitasProfissional</url-pattern>
+        <url-pattern>/consultarVisitasEmEsperaProfissional</url-pattern>
+        <url-pattern>/consultarVisitasAprovadasProfissional</url-pattern>
+        <url-pattern>/consultarVisitasReprovadasProfissional</url-pattern>
+        <url-pattern>/consultarVisitasCanceladasProfissional</url-pattern>
+        <url-pattern>/consultarVisitasRemarcadasProfissional</url-pattern>
+        <url-pattern>/consultarOrcamentoProfissional</url-pattern>
+        <url-pattern>/consultarOrcamentosEmEsperaProfissional</url-pattern>
+        <url-pattern>/consultarOrcamentosAprovadosProfissional</url-pattern>
+        <url-pattern>/consultarOrcamentosReprovadosProfissional</url-pattern>
+        
+        <url-pattern>/consultarAgendaProfissional</url-pattern>
+        <url-pattern>/consultarOrcamentosReprovadosProfissional</url-pattern>
+        <url-pattern>/consultarAgendaEmEsperaProfissional</url-pattern>
+        
+        <url-pattern>/consultarAgendaConcluidaProfissional</url-pattern>
+        <url-pattern>/consultarAgendaCanceladaProfissional</url-pattern>
+        
+        <url-pattern>/consultarReagendadosProfissional</url-pattern>
+        <url-pattern>/buscarTodasAvaliacoesProfissional</url-pattern>
+        <url-pattern>/buscarAvaliacoesPendentesProfissional</url-pattern>
+        <url-pattern>/buscarAvaliadosProfissional</url-pattern>
+        <url-pattern>/areaProfissional</url-pattern>
+        <url-pattern>/agendarVisita</url-pattern>
+        <url-pattern>/enviarOrcamento</url-pattern>
+        <url-pattern>/recusarPedido</url-pattern>
+        <url-pattern>/editarProfissional</url-pattern>
+        <url-pattern>/cancelarVisitaProfissional</url-pattern>
+        <url-pattern>/cancelarAgendamentoProfissional</url-pattern>
+        <url-pattern>/finalizarPedido</url-pattern>
+        <url-pattern>/</url-pattern>
+        <url-pattern>/</url-pattern>
+        <url-pattern>/</url-pattern>
+        <url-pattern>/</url-pattern>
+        <url-pattern>/</url-pattern>
+        <url-pattern>/</url-pattern>
+        <url-pattern>/</url-pattern>
+        <url-pattern>/</url-pattern>
+        <url-pattern>/</url-pattern>
+        
+        
+        
+        
+    </filter-mapping>
+    
+    <filter>
+        <filter-name>AcessoLogado</filter-name>
+        <filter-class>AutorizacaoDeAcesso.AcessoLogado</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AcessoLogado</filter-name>
+        <url-pattern>/Agenda/*</url-pattern>
+        <url-pattern>/Avaliacao/*</url-pattern>
+        <url-pattern>/Cliente/*</url-pattern>
+        <url-pattern>/Consultas/*</url-pattern> 
+        <url-pattern>/Pedido/*</url-pattern>
+        <url-pattern>/Profissional/*</url-pattern>
+        <url-pattern>/Visita/*</url-pattern>       
+                
+    </filter-mapping>
+</web-app>
